@@ -1,24 +1,172 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My web app</title>
+
+    <!-- Page Title -->
+    <title>Jimmy's Diner</title>
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-        <main>
-            <h1>Jimmy’s Diner</h1>
-            <p>The best burgers and pizzas in town.</p>
-        </main>
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- Restaurant Header -->
+<header>
+    <h1 class="heading">Jimmy’s Diner</h1>
+    <p class="tagline">The best burgers and pizzas in town.</p>
+</header>
+
+<!-- Menu Items Section -->
+<main class="menu-container">
+
+    <!-- Menu Item -->
+    <div class="items-container">
+
+        <!-- Food Emoji -->
+        <section class="emoji-container">
+            <img class="emoji" alt="emoji">
+        </section>
+
+        <!-- Food Information -->
+        <section class="details-container">
+            <h2 class="food-item"></h2>
+            <p class="details"></p>
+            <p class="price"></p>
+        </section>
+
+        <!-- Add To Order Button -->
+        <section class="button-container">
+            <button class="add-to-order-button"></button>
+        </section>
+
+    </div>
+
+    <!-- Menu Item -->
+    <div class="items-container">
+
+        <section class="emoji-container">
+            <img class="emoji" alt="emoji">
+        </section>
+
+        <section class="details-container">
+            <h2 class="food-item"></h2>
+            <p class="details"></p>
+            <p class="price"></p>
+        </section>
+
+        <section class="button-container">
+            <button class="add-to-order-button"></button>
+        </section>
+
+    </div>
+
+    <!-- Menu Item -->
+    <div class="items-container">
+
+        <section class="emoji-container">
+            <img class="emoji" alt="emoji">
+        </section>
+
+        <section class="details-container">
+            <h2 class="food-item"></h2>
+            <p class="details"></p>
+            <p class="price"></p>
+        </section>
+
+        <section class="button-container">
+            <button class="add-to-order-button"></button>
+        </section>
+
+    </div>
+
+</main>
+
+<!-- Customer Order Section -->
+<section class="order-container">
+
+    <h2 class="order-title">Your Order</h2>
+
+    <!-- Ordered Items List -->
+    <ul class="order-list">
+
+        <!-- Ordered Item -->
+        <li class="order-row">
+
+            <!-- Item Name & Remove Button -->
+            <div class="item-details">
+                <span class="order-item"></span>
+                <button class="remove-button">remove</button>
+            </div>
+
+            <!-- Item Price -->
+            <span class="order-price"></span>
+
+        </li>
+
+        <!-- Ordered Item -->
+        <li class="order-row">
+
+            <div class="item-details">
+                <span class="order-item"></span>
+                <button class="remove-button">remove</button>
+            </div>
+
+            <span class="order-price"></span>
+
+        </li>
+
+    </ul>
+
+</section>
+
+<!-- Payment Modal -->
+<section class="modal-container">
+
+    <h2 class="modal-title">Enter card details</h2>
+
+    <form class="modal-form">
+
+        <input type="text"
+               class="full-name"
+               placeholder="Enter your name">
+
+        <input type="text"
+               class="card-number"
+               placeholder="Enter card number">
+
+        <input type="text"
+               class="card-cvv"
+               placeholder="Enter CVV">
+
+        <button type="submit" class="pay-button">
+            Pay
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Order Confirmation Message -->
+<section class="success-message-container">
+    <h2 class="success-message">
+        Thanks, James. Your order is on its way!
+    </h2>
+</section>
+
+<!-- JavaScript -->
+<script src="index.js"></script>
 
 </body>
 </html>
-

@@ -1,12 +1,44 @@
-body, h1, h2, p {
+body {
     margin: 0;
-    padding: 0;
     font-family: "Smythe", system-ui;
-    color: white;
+    font-weight: 400;
 }
-main {
-    background-image: url("./header.png");
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-image: url("header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 167px;
+    color: #ffffff;
 }
+
+.heading {
+    margin-left: 40px;
+    font-size: 39px;
+    padding-top: 40px;
+}
+.tagline {
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 24px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 1.25rem;
+}
+
+.items-container {
+    border: 1px solid red;
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
