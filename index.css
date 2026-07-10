@@ -37,8 +37,9 @@ header {
 }
 
 .items-container {
-    border: 1px solid red;
+    border-bottom: 1px solid #D2D2D2;
     width: 100%;
     margin-top: 1.25rem;
 }
+
 
